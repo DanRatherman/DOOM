@@ -1,4 +1,4 @@
-namespace = latverian_events
+namespace = gypsycurse
 
 country_event = {
 	id = gypsecurse.1
