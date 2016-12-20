@@ -1,0 +1,77 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 0  127  0 }
+
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	trade_ideas	
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Victor #0" = 100
+}
+
+leader_names = {
+	"von Doom"
+	"von Bardas"
+	"von Kampen"
+	Fortunov
+	Vernard
+	Hungaros
+	Gorzenko
+	Frazen
+	Stutgart
+	Gittrlsohn
+	Kronsteig
+	Hauptmann
+	Kroft
+	Mengo
+	Haasen
+	Draasen
+	Flynn
+	Kurtz
+	Malachi
+}
+
+ship_names = {
+	"Doomcruiser"
+}
+
+
+army_names = {
+	"Gypsies from $PROVINCE$"
+  "$PROVINCECAPITAL$ Legion"
+  "$NATION$n Gypsies"
+  "$DYNASTY$ Loyalists"
+  "Elite Doom Guards"
+}
+
+fleet_names = {
+	"Stadtflotte"
+}
