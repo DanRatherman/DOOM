@@ -1,0 +1,49 @@
+gypsy_curse = {
+        NOT = {
+                has_country_flag = had_gypsy_curse
+        }
+        AND = {
+                culture = latverian_culture
+        }
+        can_start = {
+        has_any_disaster = no
+        is_year = 1500
+        }
+        can_stop = {
+        has_any_disaster = yes
+        }
+        progress = {
+          modifier = {
+              factor = 1
+              any_country = {
+                  technology_group = eastern
+                  has_discovered = ROOT
+              }
+          }
+          modifier = {
+              factor = 2
+              any_neighbor_country = {
+                  technology_group = eastern
+              }
+          }
+          modifier = {
+              factor = 1
+              any_neighbor_country = {
+                  OR = {
+                      has_country_flag = had_gypsy_curse
+                      has_disaster = gypsy_curse
+                  }
+              }
+           }
+        }
+        can_end = {
+        had_country_flag = { flag = flu_epidemic days = 3650 }
+        stability = 2
+        }
+        modifier = {
+        global_unrest = 3
+        stability_cost_modifier = 0.5
+        }
+        on_start = gypsecurse.1
+        on_end = gypsycurse.2
+}
