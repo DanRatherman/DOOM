@@ -1,0 +1,99 @@
+namespace = latveria_deal_with_mephisto
+
+country_event = { #workaround province_event root?
+	id = latveria_deal_with_mephisto.1
+	title = "latveria_deal_with_mephisto_1_title"
+	desc = "latveria_deal_with_mephisto_1_desc"
+	picture = DIPLOMACY_eventPicture
+	
+	mean_time_to_happen = {
+	days = 1 #trigger in one day (dec 1-2?)
+
+		modifier = {
+			factor = 0
+			NOT = { owns_core_province = 156 }	#only trigger if you still own Latveria; workaround province_event root?
+		}
+	}
+
+	trigger = {
+		is_month = 12 #has to be december
+		NOT = { has_country_flag = LTV_had_event_1_yearly } #won't trigger more than once in december
+	}
+	immediate = {
+		hidden_effect = {
+			LTV = {
+				set_country_flag = LTV_had_event_1_yearly #flag to make the game understand the event has/is happening
+			}
+			LTV = {
+				months = 3 #clear the flag after ~3 months, not sure if this works, prolly smarter to do this in the nested events if we get those to work
+				clr_country_flag = LTV_had_event_1_yearly
+			}
+		}		
+	}
+	option = {
+		name = "latveria_deal_with_mephisto.1.a"	# Gamble. Prolly wanna nest events here for outcomes, since you want some flavour text. !! Also name for localisation !!
+		ai_chance = { factor = 75 }
+		random_list = { # nesting events, no idea if this actually works
+			1 = { #1% chance of successful gamble
+				country_event = { #might be events {}
+				id = latveria_deal_with_mephisto.2
+				days = 31 #trigger after 31 days to make sure its no longer december?
+				}
+			}
+			99 = { #99% chance of failed gamble
+				country_event = { #might be events {}
+				id = latveria_deal_with_mephisto.3
+				days = 31 #trigger after 31 days to make sure its no longer december?
+				}
+			}		
+		}
+	}
+	option = {
+		name = "latveria_deal_with_mephisto.1.b"	# Leave as it is.
+		ai_chance = { factor = 25 }
+		add_stability = -1
+	}
+}
+}
+
+country_event = {
+	id = latveria_deal_with_mephisto.2 #successful gamble
+	title = "latveria_deal_with_mephisto_2_title"
+	desc = "latveria_deal_with_mephisto_2_desc"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		prestige = 0 #always trigger workaround
+	}
+
+	option = { 
+		name = "latveria_deal_with_mephisto.2.a"
+		ai_change = { factor = 100 }
+		add_treasury = 500
+	}
+}
+
+country_event = {
+	id = latveria_deal_with_mephisto.3  #failed gamble
+	title = "latveria_deal_with_mephisto_3_title"
+	desc = "latveria_deal_with_mephisto_3_desc"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		prestige = 0 #always trigger workaround
+	}
+
+	option = { 
+		name = "latveria_deal_with_mephisto.3.a"
+		ai_change = { factor = 100 }
+		spawn_rebels = { #no idea how it will know where to spawn the rebels, since it atm has no scope?
+			type = revolutionary_rebels #may wanna do other rebels?
+			size = 5
+		}
+		add_unrest = 10 #no idea how it will know where the unrest happens, since it atm has no scope?
+	}
+}
