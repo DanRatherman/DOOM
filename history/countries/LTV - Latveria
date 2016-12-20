@@ -14,6 +14,6 @@ fixed_capital = 156 # Cannot move capital away from this province & no power cos
 		dip = 6
 		mil = 6
 		regent = yes
-    personality = immortal #no idea if this works
+    		personality = immortal #no idea if this works
 	}
 }
