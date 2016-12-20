@@ -5,6 +5,9 @@ NAT = "countries/Natives.txt"
 
 #Latveria Mod
 LTV	= "countries/Latveria.txt"
+WKD	= "countries/Wakanda.txt"
+TNA	= "countries/Transia.txt"
+SYM	= "cointries/Symkaria.txt"
 
 #Scandinavia
 SWE	= "countries/Sweden.txt"
