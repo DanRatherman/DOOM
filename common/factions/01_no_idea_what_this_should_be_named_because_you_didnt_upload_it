@@ -1,0 +1,32 @@
+faction_sorcerers = {
+        monarch_power = ADM
+
+        modifier = {
+                stability_cost_modifier = -0.1
+                global_unrest = -1
+                merchants = 1
+                global_trade_power = 0.1
+        }
+}
+
+faction_cantremember = {
+        monarch_power = DIP
+
+        modifier = {
+                stability_cost_modifier = -0.1
+                global_unrest = -1
+                merchants = 1
+                global_trade_power = 0.1
+        }
+}
+
+faction_gypsies = {
+        monarch_power = MIL
+
+        modifier = {
+                stability_cost_modifier = -0.1
+                global_unrest = -1
+                merchants = 1
+                global_trade_power = 0.1
+        }
+}
