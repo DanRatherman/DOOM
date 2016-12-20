@@ -1,0 +1,177 @@
+organised_through_sorcerers_aspect = {
+	effect = {
+		development_cost = -0.05
+	}
+	ai_will_do = {
+		factor = 15
+		modifier = {
+			factor = 1
+			is_at_war = no
+		}
+	}
+}
+
+sorcerers_may_marry_aspect = {
+	effect = {
+		stability_cost_modifier = -0.10
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 2
+			unrest = 4
+			NOT = { stability = 0 }
+		}
+	}
+}
+
+adult_sacrifice_to_doom_aspect = {
+	effect = { 
+		global_missionary_strength = 0.01
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.8 }
+		}
+	}
+}
+
+litany_of_doom_aspect = {
+	effect = { 
+		discipline = 0.025
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+doom_accepts_prayers_aspect = {
+	effect = { 
+		land_morale = 0.05
+		naval_morale = 0.05
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+icons_of_doom_aspect = {
+	effect = { 
+		prestige = 0.5
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { prestige = -40 }
+		}
+	}
+}
+
+legalised_warlockery_aspect = {
+	effect = {
+		legitimacy = 0.25
+		devotion = 0.25
+		horde_unity = 0.25
+		republican_tradition = 0.1
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			NOT = { legitimacy = 60 }
+		}
+	}
+}
+
+gypsy_diaspora_aspect = {
+	effect = {
+		global_colonial_growth = 15
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			num_of_colonies = 1
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+	}
+}
+
+every_able_son_aspect = {
+	effect = {
+		manpower_recovery_speed = 0.1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			is_at_war = yes
+			NOT = { manpower_percentage = 0.9 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { manpower_percentage = 0.5 }
+		}
+	}
+}
+
+individual_gypsy_seers_aspect = {
+	effect = { 
+		idea_cost = -0.05
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}
+
+allow_personalised_gifts_to_doom_aspect = {
+	effect = { 
+		production_efficiency = 0.1
+	}
+	ai_will_do = {
+		factor = 17
+		modifier = {
+			factor = 0.5
+			treasury = 500
+		}
+		modifier = {
+			factor = 0
+			treasury = 2500
+		}
+	}
+}
+
+dr_doom_biography_aspect = {
+	effect = {
+		global_unrest = -1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			unrest = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_rebel_controlled_provinces = 1
+		}	
+	}
+}
