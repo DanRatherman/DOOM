@@ -1,0 +1,35 @@
+latverian_culture_group = {
+	latverian_culture = {
+		male_names = {
+			Victor Werner Kristoff
+		}
+		female_names = {
+			Cynthia Lucia Valeria
+		}
+		dynasty_names = {
+			"von Doom"
+		}
+	}
+	transian_culture = {
+		male_names = {
+			Pietro Django Jonathan
+		}
+		female_names = {
+			Wanda Marya Natalya
+		}
+		dynasty_names = {
+			Maximoff
+		}
+	}
+	symkarian_culture = {
+		male_names = {
+			Stefan Lymka Ernst
+		}
+		female_names = {
+			Silver Anastasia Anna
+		}
+		dynasty_names = {
+			Stefano
+		}
+	}
+}
