@@ -37,7 +37,7 @@ gypsy_curse = {
            }
         }
         can_end = {
-        had_country_flag = { flag = flu_epidemic days = 3650 }
+        had_country_flag = { flag = gypsy_curse_flag days = 3650 }
         stability = 2
         }
         modifier = {
