@@ -1,0 +1,75 @@
+ sorcerer = {
+monarch_power = ADM
+# bonus
+technology_cost = 0.9
+chance = {
+factor = 0.69
+tag = LTV
+}
+}
+
+spriteTypes = {
+ spriteType = {
+  name = GFX_advisor_sorcerer
+  texturefile = gfxinterfaceadvisorscossack_philosopher.dds #no idea if this is correct path, look it up faget
+  noOfFrames = 1
+  norefcount = yes
+  effectFile = gfxFXbuttonstate.lua
+  loadType = INGAME
+ }
+}
+
+sorcerer Sorcerer
+ sorcerer_desc A sorcerer from Latveria that helps Doom in his research.
+
+###
+ 
+informer = {
+monarch_power = DIP
+# bonus
+corruption = 0.5
+chance = {
+factor = 0.69
+tag = LTV
+}
+}
+
+spriteTypes = {
+ spriteType = {
+  name = GFX_advisor_informer
+  texturefile = gfxinterfaceadvisorscossack_master_of_mint.dds #no idea if this is correct path, look it up faget
+  noOfFrames = 1
+  norefcount = yes
+  effectFile = gfxFXbuttonstate.lua
+  loadType = INGAME
+ }
+}
+
+informer Informer
+ informer_desc A disgusting sycophant informer that helps Doom figure out who he can trust.
+
+###
+ 
+gypsyclanleader = {
+monarch_power = MIL
+# bonus
+army_tradition = 1.1 
+chance = {
+factor = 0.69
+tag = LTV
+}
+}
+
+spriteTypes = {
+ spriteType = {
+  name = GFX_advisor_gypsyclanleader
+  texturefile = gfxinterfaceadvisorscossack_army_organiser.dds #no idea if this is correct path, look it up faget
+  noOfFrames = 1
+  norefcount = yes
+  effectFile = gfxFXbuttonstate.lua
+  loadType = INGAME
+ }
+}
+
+gypsyclanleader Gypsy Clan Leader
+ gypsyclanleader_desc A Latverian gypsy clan leader, helps with training Doom's troops.
