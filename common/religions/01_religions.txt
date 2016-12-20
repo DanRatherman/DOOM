@@ -1,0 +1,62 @@
+latverian_r_group = {
+        flags_with_emblem_percentage = 10
+	      flag_emblem_index_range = { 83 96 }
+        blackswanism = {
+            color = { 0.25 0.45 0.45 }
+            icon = 18
+            country = {
+              tolerance_own = 1
+              global_autonomy = -0.05
+            }
+
+            country_as_secondary = {
+              tolerance_own = 1
+              global_autonomy = -0.05
+            }
+
+            province = {
+              local_missionary_strength = 0.02
+            }
+
+            authority = yes
+            religious_reforms = yes
+            reform_tooltip = INTI_REFORM_TOOLTIP
+
+            heretic = { INTI_HERETIC }	
+          }
+        godemperordoom = {
+          color = { 0.5 0.5 0.3 }
+          icon = 18
+          country = {
+            tolerance_own = 1
+            global_autonomy = -0.05
+          }
+
+          country_as_secondary = {
+            tolerance_own = 1
+            global_autonomy = -0.05
+          }
+
+          province = {
+            local_missionary_strength = 0.02
+          }
+
+          uses_church_power = yes				# Uses church power/aspect mechanics
+          aspects = {
+            organised_through_sorcerers_aspect
+            sorcerers_may_marry_aspect
+            adult_sacrifice_to_doom_aspect
+            litany_of_doom_aspect
+            doom_accepts_prayers_aspect
+            icons_of_doom_aspect
+            legalised_warlockery_aspect
+            gypsy_diaspora_aspect
+            every_able_son_aspect
+            individual_gypsy_seers_aspect
+            allow_personalised_gifts_to_doom_aspect
+            dr_doom_biography_aspect
+          }
+
+          heretic = { INTI_HERETIC }	
+        }
+}
