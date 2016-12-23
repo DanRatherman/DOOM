@@ -21,18 +21,27 @@ province_event = {
 	option = { 	# Folding City
 		name = "EVTOPTA_LTVUNI1"
 		ai_chance = { factor = 33 }
-		add_country_modifier = "folding_city"
+		add_country_modifier = {
+			name = folding_city
+			duration = -1
+		}
 	}
   
   	option = {	# Werner Academy
 		name = "EVTOPTA_LTVUNI2"
 		ai_chance = { factor = 33 }
-		add_country_modifier = "werner_academy"
+		add_country_modifier = {
+			name = werner_academy
+			duration = -1
+		}
 	}
   
   	option = {	# Latverian Academy of the Sciences
 		name = "EVTOPTA_LTVUNI3"
 		ai_chance = { factor = 33 }
-		add_country_modifier = "latverian_academy_of_the_sciences"
+		add_country_modifier = {
+			name = latverian_academy_of_the_sciences
+			duration = -1
+		}
 	}
 }
