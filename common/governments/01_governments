@@ -11,7 +11,7 @@ enforced_monarchy = {
 	}
 	nation_designer_cost = 0
 	
-	color = { 179 25 25 } #fix
+	color = { 50  90  50 }
  
 	ai_will_do = {
 		factor = 0
@@ -63,8 +63,11 @@ god_emperor_doom_empire = {
 	
 	rank = {
 		3 = {
+			global_unrest = -2
 			prestige = 0.5
 			embracement_cost = 0.1
+			unjustified_demands = -0.1
+			global_autonomy = -0.025
 		}
 	}
 	fixed_rank = 3
