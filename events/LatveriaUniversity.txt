@@ -9,11 +9,9 @@ province_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		AND = {
-			tag = LTV
-			has_building = university
-			capital = 156
-		}
+		tag = LTV
+		has_building = university
+		capital = 156
 	}
 	
 	mean_time_to_happen = {
