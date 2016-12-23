@@ -6,6 +6,8 @@ province_event = {
 	desc = "EVTDESC_LTVUNI1"
 	picture = INVENTION_eventPicture
 	
+	fire_only_once = yes
+	
 	trigger = {
 		AND = {
 			tag = LTV
