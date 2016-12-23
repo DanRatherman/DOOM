@@ -1,5 +1,12 @@
 # Country unit colors.
 
+# Latveria
+LTV = {
+    color1= { 50  90  50 }
+    color2= { 50 50 50 }
+    color3= { 0 0 0 }
+}
+
 # Sweden FIXED
 SWE = {
     color1= { 62 122 189  }
