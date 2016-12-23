@@ -1,0 +1,48 @@
+LTV_ideas = {
+	start = {						#The Insular Kingdom
+		province_warscore_cost = -0.1
+		fort_maintenance_modifier = -0.25
+	}
+
+	bonus = {						#Doom Is For The Children
+		development_cost = -0.1
+		production_efficiency = 0.1
+	}
+	
+	trigger = {
+			tag = LTV
+				}
+	}
+	free = yes		#wibe added at load.
+	
+	gypsy_soldiers = {
+		discipline = 0.05
+		infantry_power = 0.1
+	}
+	castle_doom = {
+		defensiveness = 0.05
+		hostile_attrition = 1
+	}
+	no_one-dies_unless_doom_says_so = {
+		shock_damage_received = -0.2
+		land_morale = 0.2
+			}
+	diplomatic_immunity = {
+		core_creation = -0.33
+		prestige_decay = -0.01
+	}
+	doomstadt_rathauz = {
+		global_unrest = -1
+		global_spy_defence = 0.3
+		global_spy_offence = 0.3
+	}
+	mengo_brothers = {
+		merc_maintenance_modifier = -0.25
+		possible_mercenaries = 0.25
+	}
+	jewel_of_the_balkans = {
+		global_trade_goods_size_modifier = 0.1
+		culture_conversion_cost = -0.2
+		trade_efficiency = 0.1
+	}
+}
