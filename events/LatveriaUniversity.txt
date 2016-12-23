@@ -1,0 +1,38 @@
+namespace = latveriauniversity_event
+
+province_event = {
+	id = latveriauniversity_event.1
+	title = "EVTNAME_LTVUNI1"
+	desc = "EVTDESC_LTVUNI1"
+	picture = INVENTION_eventPicture
+	
+	trigger = {
+      AND = {
+				tag = LTV
+				has_building = university
+        capital = 156
+			}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { # Folding City
+		name = "EVTOPTA_LTVUNI1"
+		ai_chance = { factor = 33 }
+		add_country_modifier = "folding_city"
+	}
+  
+  option = {		# Werner Academy
+		name = "EVTOPTA_LTVUNI2"
+		ai_chance = { factor = 33 }
+		add_country_modifier = "werner_academy"
+	}
+  
+  option = {		# Latverian Academy of the Sciences
+		name = "EVTOPTA_LTVUNI3"
+		ai_chance = { factor = 33 }
+		add_country_modifier = "latverian_academy_of_the_sciences"
+	}
+}
