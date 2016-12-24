@@ -7,13 +7,14 @@ primary_culture = latverian_culture
 capital = 156	# Latveria
 fixed_capital = 156 # Cannot move capital away from this province & no power cost to move to it
 
-1399.1.1 = {
+1443.3.4 = {
 	monarch = {
-		name = "Victor von Doom" #not sure what to put here
-		adm = 6
-		dip = 6
+		name = "Victor von Doom" 
+		adm = 5
+		dip = 4
 		mil = 6
-		regent = yes
-    		personality = immortal #no idea if this works
-	}
+		leader = {	name = "Victor von Doom"		type = general rank = 0	fire = 5	shock = 5	maneuver = 5	siege = 5}
+    		}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = inspiring_leader_personality
 }
